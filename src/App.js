@@ -1,17 +1,16 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom'
 import './App.css';
-import HelloWorld from './HelloWorld';
-import Test from './Test';
-
+import { Button, Alert } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Nav0 from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-      <HelloWorld />
-      <h2>Testing...</h2>
-      <p>My name is Derek.</p>
-      <Test/>
+      <Nav0/>
+      {/* <h1 variant>Hello World!</h1> */}
+
     </div>
   );
 }
