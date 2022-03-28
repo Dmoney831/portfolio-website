@@ -1,0 +1,27 @@
+figcaption {
+    position: absolute;
+    bottom: 19vh;
+    color:aliceblue;
+    text-align: center;
+    margin: 0 3vw;
+    color: rgb(255, 249, 215) !important;
+    font-weight: bold !important;
+    align-items: center !important;
+    width: 100%;
+    
+}
+img {
+    width: 100%;
+    min-width: 1600px;
+    height: auto;
+    position: relative;
+}
+.hello {
+    font-size: 4vw;
+}
+.Derek {
+    font-size: 10vw;
+}
+.se {
+    font-size: 5vw;
+}
