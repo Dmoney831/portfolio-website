@@ -10,9 +10,9 @@ import './style/Greeting.css'
 function Greeting() {
     return(
         <div>
-            <img src={img8} alt='background' />
-                <figure className='position-relative'>
-                    <figcaption>
+            <img className='greeting-img' src={img8} alt='background' />
+                <figure className=' position-relative'>
+                    <figcaption className='greeting__figcaption align-items-center'>
                         <h4 className='hello'>Hello World</h4>
                         <h1 className='Derek'>Derek Lee</h1>
                         <h2 className='se'>Software Engineer</h2>

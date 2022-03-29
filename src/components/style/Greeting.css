@@ -1,4 +1,6 @@
-figcaption {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+.greeting__figcaption {
     position: absolute;
     bottom: 19vh;
     color:aliceblue;
@@ -10,7 +12,7 @@ figcaption {
     width: 100%;
     
 }
-img {
+.greeting-img {
     width: 100%;
     min-width: 1600px;
     height: auto;
@@ -18,10 +20,14 @@ img {
 }
 .hello {
     font-size: 4vw;
+    font-family: 'Noto Serif', serif;
 }
 .Derek {
     font-size: 10vw;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
 }
 .se {
     font-size: 5vw;
+    font-family: 'Noto Serif', serif;
 }
