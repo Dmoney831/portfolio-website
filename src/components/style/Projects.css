@@ -4,13 +4,142 @@
     /* border: 4px solid black; */
     /* justify-content: center; */
 }
+
+
 .proj-img {
     border-radius: 8px;
 }
 
+
+/* 
 .proj-cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+} */
+.proj-container {
+    justify-content: center;
 }
+.proj-card{
+    position: relative;
+    overflow: hidden;
+}
+.proj-card:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 220%;
+    background: rgba(0, 0, 0, 0.5);
+    top: -50%;
+    left: -100%;
+    z-index: 1;
+    /* transform: rotate(25deg); */
+    transform-origin: center top 0;
+    transition: 0.5s;
+}
+.proj-card:hover:before{
+    left: 0;
+
+}
+.proj-img {
+    width: 100%;
+    height: auto;
+}
+.proj-text {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: -100%;
+    color: antiquewhite;
+    left: 0;
+    z-index: 2;
+    transition: 1.1s;
+}
+.proj-card:hover .proj-text{
+    top: 80px;
+
+}
+.proj-card:hover .proj-img{
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+
+/* .section-header{
+    margin-bottom: 5%;
+}
+.single-team{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.team-img{
+    position: relative;
+}
+.team-img:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    transform: translateX(-100%);
+    transition: all 0.4s ease;
+    visibility: hidden;
+    content: '';
+    background: rgba(130, 133, 203, 0.9);
+    height: 100%;
+    width: 100%;
+}
+.single-team:hover .team-img:before{
+    visibility: visible;
+    transform: translateY(0%);
+}
+.proj-img{
+    width: 100%;
+    z-index: 10;
+    transition: 0.7s;
+}
+.single-team:hover img{
+    transform: scale(1.1);
+
+}
+.overlay-text{
+    position: absolute;
+    z-index: 15;
+    color: black;
+    top: 30%;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    font-family: 'Courier New', Courier, monospace;
+}
+.single-team:hover .overlay-text{
+    opacity: 1;
+    visibility: visible;
+}
+.overlay-text h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 1s ease;
+    font-size: 30px;
+    margin: 5px 0 15px;
+    position: relative;
+    top: -22px;
+}
+.single-team:hover h2{
+    top: 0;
+}
+.overlay-text p{
+    position: relative;
+    bottom: -22px;
+    transition: all 1s ease;
+}
+.single-team:hover p{
+    bottom:0;
+} */
