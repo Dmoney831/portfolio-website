@@ -2,7 +2,7 @@
 
 .greeting__figcaption {
     position: absolute;
-    bottom: 19vh;
+    bottom: 4vh;
     color:aliceblue;
     text-align: center;
     margin: 0 3vw;
@@ -14,7 +14,6 @@
 }
 .greeting-img {
     width: 100%;
-    min-width: 1600px;
     height: auto;
     position: relative;
 }

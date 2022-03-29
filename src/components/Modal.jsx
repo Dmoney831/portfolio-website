@@ -1,4 +1,5 @@
 import React from 'react'
+import { list_of_projects } from '../data/Data.jsx'
 import { Card, Button } from 'react-bootstrap'
 import './style/Modal.css'
 

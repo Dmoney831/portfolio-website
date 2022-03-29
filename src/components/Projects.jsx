@@ -14,36 +14,104 @@ import Modal from './Modal'
 
 function Projects() {
     const [openModal, setOpenModal] = useState(false);
+    const [oneProject, setOneProject] = useState(list_of_projects)
+    
+    
 
-    const projectsObject = list_of_projects.map((item, idx) => {
-        return (
-            <div key={idx}>
-                <h1>{item.title}</h1>
-            </div>
-        )
-    })
+
     return (
         <div className="section-header text-center  mt-5">
             <h4>projects</h4>
             <p>list of proejcts</p>
-
-            <div className="container proj-container">
-                <div className="row justify-content-center">
-                        <button type='button' className="btn btn-link col-md-3 col-sm-6 my-5" onClick={() => setOpenModal(true)}>
-                            <div className=" proj-card card">
-                                <img className='proj-img' src={Triton} />
-                                    <div className="proj-text card-text">
-                                        <h3 className='title'>Title</h3>
-                                        <h5 className='description'>Description</h5>
-                                        <br />
-                                        <h4>+</h4>
+            <div className="proj-container">
+                {/* <div className="proj-box"> */}
+                    {oneProject.map((item, index)=> {
+                        return(
+                            <div className='proj-map mx-3'key={index} >
+                                <button key={index} type='button' className="btn btn-link " onClick={() => setOpenModal(true)}>
+                                    <div className=" proj-card card">
+                                        <img className='proj-img' src={item.thumbnail} style={{ width:300, height:300 }}/>
+                                        <div className="proj-text card-text">
+                                            <h3 className='title'>{item.title}</h3>
+                                            <h5 className='description'>description</h5>
+                                            <br/>
+                                            <h4>+</h4>
+                                        </div>
                                     </div>
+                                </button>
+                                {openModal && <Modal closeModal={setOpenModal} />}
                             </div>
-                        </button>
-                        {openModal && <Modal closeModal={setOpenModal}/>}
-                </div>
+                        )
+                    })}
+                {/* </div> */}
             </div>
         </div>
+                    
+            // <div className="container proj-container" >
+            //     <div className='ddd' >
+            //         {oneProject.map((item, index) => {
+            //             return (
+            //                     <div className="" key={index}  >
+            //                         <button type='button' className="btn btn-link col-md-3 col-sm-6 my-5" onClick={() => setOpenModal(true)}>
+            //                             <div className=" proj-card card">
+            //                                 <img className='proj-img' src={item.thumbnail} />
+            //                                 <div className="proj-text card-text">
+            //                                     <h3 className='title'>{item.title}</h3>
+            //                                     <h5 className='description'>description</h5>
+            //                                     <br />
+            //                                     <h4>+</h4>
+            //                                 </div>
+            //                             </div>
+            //                         </button>
+            //                         {openModal && <Modal closeModal={setOpenModal} />}
+            //                     </div>
+            //             )
+            //         })}
+            //     </div>
+            // </div>
+
+
+            // <div className="container proj-container">
+            //     <div className="row justify-content-center">
+            //         <button type='button' className="btn btn-link col-md-3 col-sm-6 my-5" onClick={() => setOpenModal(true)}>
+            //             <div className=" proj-card card">
+            //                 <img className='proj-img' src={Triton} />
+            //                 <div className="proj-text card-text">
+            //                     <h3 className='title'>Title</h3>
+            //                     <h5 className='description'>Description</h5>
+            //                     <br />
+            //                     <h4>+</h4>
+            //                 </div>
+            //             </div>
+            //         </button>
+            //         {openModal && <Modal closeModal={setOpenModal} />}
+            //         <button type='button' className="btn btn-link col-md-3 col-sm-6 my-5" onClick={() => setOpenModal(true)}>
+            //             <div className=" proj-card card">
+            //                 <img className='proj-img' src={PP} />
+            //                 <div className="proj-text card-text">
+            //                     <h3 className='title'>Title</h3>
+            //                     <h5 className='description'>Description</h5>
+            //                     <br />
+            //                     <h4>+</h4>
+            //                 </div>
+            //             </div>
+            //         </button>
+            //         {openModal && <Modal closeModal={setOpenModal} />}
+            //         <button type='button' className="btn btn-link col-md-3 col-sm-6 my-5" onClick={() => setOpenModal(true)}>
+            //             <div className=" proj-card card">
+            //                 <img className='proj-img' src={PP} />
+            //                 <div className="proj-text card-text">
+            //                     <h3 className='title'>Title</h3>
+            //                     <h5 className='description'>Description</h5>
+            //                     <br />
+            //                     <h4>+</h4>
+            //                 </div>
+            //             </div>
+            //         </button>
+            //         {openModal && <Modal closeModal={setOpenModal} />}
+            //     </div>
+            // </div>
+        // </div>
 
         // <section className='mb-5'>
         //     <div className='proj0'>
