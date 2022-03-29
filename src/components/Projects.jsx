@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
@@ -10,9 +10,11 @@ import PP from '../images/PP.png'
 import easyPeasy from '../images/easyPeasy.png'
 import './style/Projects.css'
 import { list_of_projects } from '../data/Data.jsx'
-
+import Modal from './Modal'
 
 function Projects() {
+    const [openModal, setOpenModal] = useState(false);
+
     const projectsObject = list_of_projects.map((item, idx) => {
         return (
             <div key={idx}>
@@ -27,19 +29,22 @@ function Projects() {
 
             <div className="container proj-container">
                 <div className="row justify-content-center">
-                    <div className="col-md-5 col-sm-6 my-5">
-                        <div className="proj-card card">
-                            <img className='proj-img' src={Triton} />
-                            <div className="proj-text card-text">
-                                <h3 className='title'>Title</h3>
-                                <h5 className='description'>Description</h5>
+                        <button type='button' className="btn btn-link col-md-3 col-sm-6 my-5" onClick={() => setOpenModal(true)}>
+                            <div className=" proj-card card">
+                                <img className='proj-img' src={Triton} />
+                                    <div className="proj-text card-text">
+                                        <h3 className='title'>Title</h3>
+                                        <h5 className='description'>Description</h5>
+                                        <br />
+                                        <h4>+</h4>
+                                    </div>
                             </div>
-                        </div>
-                    </div>
-                    
+                        </button>
+                        {openModal && <Modal closeModal={setOpenModal}/>}
                 </div>
             </div>
         </div>
+
         // <section className='mb-5'>
         //     <div className='proj0'>
         //         <div className='proj1'>
