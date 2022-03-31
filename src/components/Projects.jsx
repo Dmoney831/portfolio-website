@@ -16,16 +16,21 @@ function Projects() {
     const [openModal, setOpenModal] = useState(false);
     const [oneProject, setOneProject] = useState(list_of_projects)
     
+    const Clicking = (e) => {
+        console.log(e)
+        setOpenModal(true)
+    }
+
 
     return (
         <div className="proj-master text-center  mt-5">
-            <h2><strong>Projects</strong></h2>
-            <h4>A collection of creative production </h4>
+            <h2 className='mb-5'><strong>Recent Projects</strong></h2>
+            {/* <h4>A collection of my recent projects.</h4> */}
             <div className="proj-container">
                 {oneProject.map((item, index)=> {
                     return(
-                        <div className='proj-map mx-2 my-2'key={index} >
-                            <button type='button' className="btn btn-link " onClick={() => setOpenModal(true)}>
+                        <div className='proj-map mx-2 my-2' key={index} id={index} >
+                            <button type='button' className="btn btn-link " onClick={() => Clicking(index)  }>
                                 <div className=" proj-card card">
                                     <img className='proj-img' src={item.thumbnail} style={{ width:250, height:250 }}/>
                                     <div className="proj-text card-text">
@@ -37,10 +42,10 @@ function Projects() {
                                 </div>
                             </button>
                             
-                            {openModal && <Modal closeModal={setOpenModal}/>}
                         </div>
                     )
                 })}
+                {openModal && <Modal closeModal={setOpenModal}/>}
             </div>
         </div>
     )
