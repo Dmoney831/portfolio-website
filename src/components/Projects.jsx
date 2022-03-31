@@ -18,16 +18,16 @@ function Projects() {
     
 
     return (
-        <div className="section-header text-center  mt-5">
-            <h4>projects</h4>
-            <p>list of proejcts</p>
+        <div className="proj-master text-center  mt-5">
+            <h2><strong>Projects</strong></h2>
+            <h4>A collection of creative production </h4>
             <div className="proj-container">
                 {oneProject.map((item, index)=> {
                     return(
                         <div className='proj-map mx-2 my-2'key={index} >
                             <button type='button' className="btn btn-link " onClick={() => setOpenModal(true)}>
                                 <div className=" proj-card card">
-                                    <img className='proj-img' src={item.thumbnail} style={{ width:280, height:280 }}/>
+                                    <img className='proj-img' src={item.thumbnail} style={{ width:250, height:250 }}/>
                                     <div className="proj-text card-text">
                                         <h3 className='title'>{item.title}</h3>
                                         <h5 className='description'>description</h5>

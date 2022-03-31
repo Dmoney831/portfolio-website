@@ -19,7 +19,7 @@ function Intro() {
                             <h3>My name is,</h3>
                             <h2>Derek Lee</h2>
                             <h3>Software Engineer.</h3> <br/> 
-                            <h5>I'm a Junior Software Engineer who do mining innovative and creative to reach a goal via measurable plan and realizable idea. My primary interest lies in using efficient computation and cloud computing platforms.</h5>
+                            <h5>I'm a Software Engineer who do mining innovative and creative to reach a goal via measurable plan and realizable idea. My primary interest lies in using efficient computation and cloud computing platforms.</h5>
                             
                         </div>
                     </div>
