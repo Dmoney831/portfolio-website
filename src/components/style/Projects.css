@@ -71,4 +71,12 @@
 .proj-box {
     display: flex;
     flex-direction: row;
-} 
+}
+
+@media screen and (max-width: 500px) {
+    .proj-img {
+        width: 200px !important;
+        height: 200px !important;
+
+    }
+}

@@ -9,7 +9,7 @@ import './style/Navbar.css'
 function Nav0() {
     return (
             <Navbar className='main'  variant='dark' sticky='top' >
-                <Nav className='px-5'>
+                <Nav className='main0 px-5'>
                     <Nav.Link href='#home'><h5 className='text'>Home</h5></Nav.Link>
                     <Nav.Link href='#about'><h5 className='text'>About</h5></Nav.Link>
                     <Nav.Link href='#projects'><h5 className='text'>Projects</h5></Nav.Link>

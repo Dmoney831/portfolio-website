@@ -2,10 +2,10 @@
 
 .greeting__figcaption {
     position: absolute;
-    bottom: 4vh;
+    bottom: 5vh;
     color:aliceblue;
     text-align: center;
-    margin: 0 3vw;
+    margin: 0 0vw;
     color: rgb(255, 249, 215) !important;
     font-weight: bold !important;
     align-items: center !important;
@@ -18,11 +18,11 @@
     position: relative;
 }
 .hello {
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: 'Noto Serif', serif;
 }
 .Derek {
-    font-size: 10vw;
+    font-size: 9vw;
     font-weight: bold;
     font-family: 'Noto Serif', serif;
 }

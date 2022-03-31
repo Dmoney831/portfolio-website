@@ -9,7 +9,7 @@ import './style/Greeting.css'
 
 function Greeting() {
     return(
-        <div>
+        <>
             <img className='greeting-img' src={img8} alt='background' />
                 <figure className=' position-relative'>
                     <figcaption className='greeting__figcaption align-items-center'>
@@ -18,7 +18,7 @@ function Greeting() {
                         <h2 className='se'>Software Engineer</h2>
                     </figcaption>
                 </figure>
-        </div>
+        </>
         // <div>
         //     <h1>Derek Lee</h1>
         //     <h2>Software Engineer</h2>

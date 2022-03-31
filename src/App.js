@@ -8,6 +8,7 @@ import Skillset from './components/Skillset';
 import Greeting from './components/Greeting';
 import Intro from './components/Intro';
 import Projects from './components/Projects';
+import Profile from './components/Profile';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Nav0/>
       <Greeting/>
       <Intro/>
-      {/* <Skillset/> */}
+      <Profile/>
       <Projects/>
     </div>
   );
