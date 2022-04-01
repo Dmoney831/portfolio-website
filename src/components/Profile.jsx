@@ -7,7 +7,7 @@ import {skills} from '../data/Data.jsx'
 
 function Profile() {
   return (
-    <div className='prof-master'>
+    <div className='prof-master' >
         <div className="prof-prof">
             <h3><strong>Profile</strong></h3>
 

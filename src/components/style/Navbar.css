@@ -1,14 +1,13 @@
-.sub{
-    /* margin-left: 10%; */
-    
-}
+
 .main{
-    position: absolute;    
-}
-.text {
+    position: absolute;
     color: rgb(255, 249, 215) !important;
     font-family: 'Noto Serif', serif;
 }
+.main0 h5 {
+    text-decoration: none;    
+}
+
 @media screen and (max-width: 500px ) {
     .main0 {
         margin-left: 15px;
