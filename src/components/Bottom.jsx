@@ -19,7 +19,7 @@ function Bottom() {
             </div>
             <div className='bottom1' >
                 <h5 className='mx-5'>© 2022 Derek Lee</h5>
-                <h5 className=''>Built with React and Bootstrap</h5>
+                <h5 >Built with React and Bootstrap</h5>
                 <h5 className='mx-5'>Hosted by Netflify</h5>
             </div>
         </div>

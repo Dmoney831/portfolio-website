@@ -50,7 +50,7 @@ export const list_of_projects = [
         description1: "A personal portfolio website to represent myself, skills, and prior projects.",
         thumbnail: PP,
         github: "https://github.com/Dmoney831/portfolio-website",
-        app: "www.dmoneylee.com"
+        app: "https://dmoneylee.com"
     }
 ]           
 

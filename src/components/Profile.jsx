@@ -25,7 +25,7 @@ function Profile() {
             </div>
             <div className="prof-mbti mt-3">
                 <h5>MBTI:</h5>
-                <a style={{ color: 'rgb(255,249,215)', textDecoration: 'none'}} href='https://www.16personalities.com/intj-personality' target='-blank'>
+                <a style={{ color: 'rgb(255,249,215)', textDecoration: 'none'}} href='https://www.16personalities.com/intj-personality' target='_blank'>
                     <h5 className='mbti-link' style={{ color: 'gray'}}>INTJ | What's INTJ?</h5>
                 </a>
             </div>

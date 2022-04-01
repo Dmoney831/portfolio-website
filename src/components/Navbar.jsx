@@ -13,7 +13,7 @@ function Nav0() {
             <Navbar className='main'  variant='dark' sticky='top' >
                 <Nav className='main0 mt-1 px-5'>
 
-                    <Link to={'/home'} style={{ color: 'rgb(255, 249, 215)', textDecoration: 'none'}}>
+                    <Link to={'/'} style={{ color: 'rgb(255, 249, 215)', textDecoration: 'none'}}>
                         <h5 className='nav-home px-2' >Home</h5>
                     </Link>
                     
