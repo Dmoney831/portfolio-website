@@ -47,10 +47,10 @@ export const list_of_projects = [
         title: "Portfolio",
         tech: ["React", "Bootstrap", "CSS"],
         description0: "Personal Website",
-        description1: "Introduce Derek to the world!",
+        description1: "A personal portfolio website to represent myself, skills, and prior projects.",
         thumbnail: PP,
         github: "https://github.com/Dmoney831/portfolio-website",
-        app: "https://github.com/Dmoney831/portfolio-website"
+        app: "dmoneylee.com"
     }
 ]           
 
