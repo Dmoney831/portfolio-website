@@ -17,7 +17,7 @@ function Intro() {
                         </div>
                         <div className='div4 py-4 mb-5' style={{marginLeft:30}}>
                             <h3>My name is,</h3>
-                            <h2>Derek Lee</h2>
+                            <h1 style={{ color: 'gold'}}><strong>Derek Lee</strong></h1>
                             <h3>Software Engineer.</h3> <br/> 
                             <h5>I'm a Software Engineer who do mining innovative and creative to reach a goal via measurable plan and realizable idea. My primary interest lies in using efficient computation and cloud computing platforms.</h5>
                             

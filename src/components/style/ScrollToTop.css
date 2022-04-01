@@ -1,0 +1,50 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 120px;
+    left: 93%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    /* background: gold; */
+    color: antiquewhite;
+    z-index: 4;
+    
+}
+.scroll-to-top .icon {
+    margin-top: 10px;
+    animation: scrollTop 0.5s alternate ease infinite;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icon .up:hover{
+    transform: scale(1.2)
+    
+}
+
+@keyframes scrollTop {
+    from {
+        transfrom: translateY(2px)
+    }
+    to {
+        transform: translateY(-1px)
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .scroll-to-top {
+        left: 80%;
+    }
+    
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    .scroll-to-top {
+        left: 87% ;
+    }
+    
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .scroll-to-top {
+        left: 90%;
+    }
+    
+}
