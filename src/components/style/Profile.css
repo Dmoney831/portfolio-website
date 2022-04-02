@@ -29,10 +29,7 @@
 .bach {
     font-style: italic;
 }
-.skills-intro {
-    /* margin-top: 30px; */
-    
-}
+
 .one-skill {
 
     box-shadow: rgba(252, 252, 252, 0.95) 0px 2px 5px -1px, rgba(255, 255, 255, 0.95) 0px 1px 3px -1px;
@@ -55,7 +52,19 @@
     /* margin-bottom: 20px; */
 }
 .mbti-link:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    color: gold !important;
+}
+.email-link:hover {
+    transform: scale(1.05);
+    color: gold !important;
+}
+.linkedin-link:hover {
+    transform: scale(1.05);
+    color: gold !important;
+}
+.github-link:hover {
+    transform: scale(1.05);
     color: gold !important;
 }
 

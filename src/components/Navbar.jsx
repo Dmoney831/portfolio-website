@@ -2,8 +2,9 @@ import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Navbar, Container, Nav} from 'react-bootstrap'
+import { Navbar, Nav} from 'react-bootstrap'
 import './style/Navbar.css'
+
 
 
 
@@ -25,7 +26,7 @@ function Nav0() {
                         <h5 className='nav-projects px-2'>Projects</h5>
                     </ScrollLink>
 
-                    <Link to={'/'} href='#resume' style={{ color: 'rgb(255, 249, 215)', textDecoration: 'none'}}><h5 className='nav-resume px-2'>Resume</h5></Link>
+                    <a href={require('../doc/Resume1.pdf')} target='_blank' rel="noopener noreferrer" style={{ color: 'rgb(255, 249, 215)', textDecoration: 'none'}}><h5 className='nav-resume px-2'>Resume</h5></a>
                 </Nav>
             </Navbar>
     )

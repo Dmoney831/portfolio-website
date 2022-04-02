@@ -30,9 +30,24 @@ function Profile() {
                 </a>
             </div>
             <div className="prof-email mt-3">
-                <h5>Email:</h5>
-                <h5 style={{ color: 'gray'}}>dyklee89@gmail.com</h5>
+                <h5 style={{ color: 'gold', fontWeight: 'bold'}}>Email:</h5>
+                <a style={{ color: 'gold', textDecoration: 'none'}} to='/' href='mailto:dyklee89@gmail.com'>
+                    <h5 className='email-link' style={{ color: 'gray'}}>dyklee89@gmail.com</h5>
+                </a>
             </div>
+            <div className="prof-linkedin mt-3">
+                <h5 style={{ color: 'gold', fontWeight: 'bold'}}>LinkedIn:</h5>
+                <a style={{ color: 'rgb(255,249,215)', textDecoration: 'none'}} href='https://www.linkedin.com/in/workwith-derek/' target='_blank'>
+                    <h5 className='linkedin-link' style={{ color: 'gray'}}>linkedin.com/in/workwith-derek</h5>
+                </a>
+            </div>
+            <div className="prof-github mt-3">
+                <h5 style={{ color: 'gold', fontWeight: 'bold'}}>Github:</h5>
+                <a style={{ color: 'rgb(255,249,215)', textDecoration: 'none'}} href='https://github.com/Dmoney831' target='_blank'>
+                    <h5 className='github-link' style={{ color: 'gray'}}>github.com/Dmoney831</h5>
+                </a>
+            </div>
+            
         </div>
 
         <div className="skills">
