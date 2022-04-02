@@ -1,5 +1,4 @@
 .prof-master {
-    /* background-color: rgb(0, 12, 23); */
     background-image: linear-gradient(to bottom, rgba(6, 14, 28, 0.9), rgba(13, 21, 35, 0.8) );
     display: flex;
     flex-direction: row;
@@ -14,8 +13,6 @@
     margin-right: 25px;
     margin-top: 30px;
     margin-bottom: 70px;
-    
-    /* justify-content: center; */
 }
 .skills {
     display: flex;
@@ -24,7 +21,6 @@
     margin-right: 50px;
     margin-bottom: 30px;
     margin-top: 30px;
-    /* justify-content: center; */
 }
 .bach {
     font-style: italic;
@@ -35,9 +31,7 @@
     box-shadow: rgba(252, 252, 252, 0.95) 0px 2px 5px -1px, rgba(255, 255, 255, 0.95) 0px 1px 3px -1px;
     width: 220px;
     height: 60px;
-    /* margin-top: 4px; */
     margin-left: 15px;
-    /* margin-top: 15px; */
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -48,8 +42,7 @@
 }
 .skill-title {
     margin-left: 30px;
-    /* margin-top: -31px !important; */
-    /* margin-bottom: 20px; */
+
 }
 .mbti-link:hover {
     transform: scale(1.05);
@@ -70,7 +63,6 @@
 
 @media screen and (max-width: 700px) {
     .prof-master {
-        /* background-color: rgb(0, 12, 23); */
         background-image: linear-gradient(to bottom, rgba(6, 14, 28, 0.9), rgba(13, 21, 35, 0.8) );
         display: flex;
         flex-direction: column;

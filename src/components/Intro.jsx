@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Navbar, Container, Nav, Button } from 'react-bootstrap'
 import './style/Intro.css'
 import profile from '../images/profile.JPG'
 

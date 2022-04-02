@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { list_of_projects } from '../data/Data.jsx'
-import { Card, Button } from 'react-bootstrap'
 import './style/Modal.css'
 
 function Modal({id, closeModal }) {
-    const [oneProject, setOneProject] = useState(list_of_projects)
-    console.log(list_of_projects[id])
+    // console.log(list_of_projects[id])
 
     return (
         <div className="modal-main">
@@ -27,8 +25,6 @@ function Modal({id, closeModal }) {
                         </div>
                         
                         <p className="description">{list_of_projects[id].description1}</p>
-                        {/* <p className="github">{list_of_projects[id].github}</p> */}
-                        {/* <p className="app-website">{list_of_projects[id].app}</p> */}
                     </div >
                     <div className="modal-button">
                         <a target='_blank' href={list_of_projects[id].github} style={{ textDecoration: 'none'}}><button className='source-button btn btn-outline-info'>Source Code</button></a> 

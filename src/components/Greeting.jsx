@@ -1,10 +1,6 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {Card, Container} from 'react-bootstrap'
-import Background from '../images/background.png'
 import img8 from '../images/8.png'
-import img11 from '../images/11.png'
 import './style/Greeting.css'
 
 function Greeting() {
@@ -19,10 +15,6 @@ function Greeting() {
                     </figcaption>
                 </figure>
         </>
-        // <div>
-        //     <h1>Derek Lee</h1>
-        //     <h2>Software Engineer</h2>
-        // </div>
     )
 
 }

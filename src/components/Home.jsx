@@ -15,16 +15,3 @@ const Home = () => {
 }
 export default Home
 
-
-
-
-
-
-
-/*
-<Greeting/>
-      <Intro />
-    
-      <Profile />
-      <Projects/>
-*/ 

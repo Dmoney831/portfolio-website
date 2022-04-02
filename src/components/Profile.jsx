@@ -1,8 +1,6 @@
 import React from 'react'
 import './style/Profile.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Card} from 'react-bootstrap'
-
 import {skills} from '../data/Data.jsx'
 
 function Profile() {
