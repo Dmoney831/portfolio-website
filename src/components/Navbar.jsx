@@ -26,7 +26,7 @@ function Nav0() {
                         <h5 className='nav-projects px-2'>Projects</h5>
                     </ScrollLink>
 
-                    <a href={require('../doc/Resume1.pdf')} target='_blank' rel="noopener noreferrer" style={{ color: 'rgb(255, 249, 215)', textDecoration: 'none'}}><h5 className='nav-resume px-2'>Resume</h5></a>
+                    <a href={require('../doc/CV Resume.pdf')} target='_blank' rel="noopener noreferrer" style={{ color: 'rgb(255, 249, 215)', textDecoration: 'none'}}><h5 className='nav-resume px-2'>Resume</h5></a>
                 </Nav>
             </Navbar>
     )
