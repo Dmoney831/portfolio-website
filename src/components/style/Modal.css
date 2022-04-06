@@ -2,8 +2,8 @@
    
 .modal-main {
     font-size: 20px;
-    position: fixed;
-    bottom: 10vh;
+    position: absolute;
+    /* bottom: 100px; */
     display: flex;
     z-index: 3;
     background-color: rgba(13, 21, 35, 0.9);
@@ -45,10 +45,17 @@
 .close-button {
     margin-left: 15px;
 }
+
+@media screen and (min-width: 1460px) {
+    .modal-main {
+        position: absolute;
+        bottom: -1500px;
+    }
+}
 @media screen and (max-width: 630px) {
     .modal-main {
-        position: fixed;
-        top: 30vh;
+        position: absolute;
+        /* top: -170vh; */
     }
     .modal-card {
         width: 300px;
