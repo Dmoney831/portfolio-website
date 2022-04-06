@@ -3,7 +3,7 @@
 .modal-main {
     font-size: 20px;
     position: fixed;
-    top: 30vh;
+    bottom: 10vh;
     display: flex;
     z-index: 3;
     background-color: rgba(13, 21, 35, 0.9);
