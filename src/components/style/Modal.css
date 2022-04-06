@@ -46,16 +46,17 @@
     margin-left: 15px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
     .modal-main {
         position: absolute;
-        bottom: -1500px;
+        bottom: -1100px;
     }
 }
 @media screen and (max-width: 630px) {
     .modal-main {
         position: absolute;
-        /* top: -170vh; */
+        /* bottom: -1800px; */
+        top: 3100px;
     }
     .modal-card {
         width: 300px;
